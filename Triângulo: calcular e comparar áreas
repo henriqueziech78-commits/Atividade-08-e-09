@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main() {
+    double base1, alt1, area1;
+    double base2, alt2, area2;
+
+    printf("Base do 1o triangulo: ");
+    scanf("%lf", &base1);
+    printf("Altura do 1o triangulo: ");
+    scanf("%lf", &alt1);
+    area1 = (base1 * alt1) / 2.0;
+
+    printf("\nBase do 2o triangulo: ");
+    scanf("%lf", &base2);
+    printf("Altura do 2o triangulo: ");
+    scanf("%lf", &alt2);
+    area2 = (base2 * alt2) / 2.0;
+
+    printf("\nArea 1: %.2lf | Area 2: %.2lf\n", area1, area2);
+
+    if (area1 > area2) {
+        printf("O 1o triangulo e maior.\n");
+    } else if (area2 > area1) {
+        printf("O 2o triangulo e maior.\n");
+    } else {
+        printf("Os dois tem a mesma area.\n");
+    }
+
+    return 0;
+}
